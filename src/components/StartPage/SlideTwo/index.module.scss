@@ -1,0 +1,35 @@
+.slide-two {
+	@include size(100%);
+	@include flex(column, center);
+
+	.text-box {
+		opacity: 0;
+		animation: startPageShowTextBox 1s ease-in-out 500ms forwards;
+		margin-top: 150px;
+
+		> h2 {
+			@include flex(row, center, center);
+			color: var(--white-color);
+			font-size: 32px;
+			font-weight: 300;
+
+			svg {
+				@include size(38px);
+				margin-right: 14px;
+			}
+
+			span {
+				@include position(relative, -2px);
+			}
+		}
+
+		p {
+			@include maxSize(300px, false);
+			margin-top: 16px;
+			color: rgba(#fff, 0.65);
+			font-size: 15px;
+			line-height: 21px;
+			text-align: center;
+		}
+	}
+}

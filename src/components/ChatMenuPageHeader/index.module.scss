@@ -1,0 +1,34 @@
+.chat-page-header {
+	background-color: var(--white-color);
+
+	.header-container {
+		@include size(100%, false);
+		@include flex(row, center, space-between);
+		padding: 44px 16px 24px;
+
+		.tapo {
+			@include flex(row, center);
+
+			img {
+				@include size(28px, false);
+			}
+
+			span {
+				font-size: 18px;
+				line-height: 21px;
+				background: linear-gradient(90deg, #33bee7 20%, #7cd6f1 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+			}
+		}
+
+		.user {
+			img {
+				@include size(24px);
+				object-fit: cover;
+				border-radius: 50%;
+			}
+		}
+	}
+}

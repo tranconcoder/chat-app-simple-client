@@ -1,0 +1,21 @@
+.avatar-container {
+	@include size(var(--size));
+	@include position(relative);
+
+	> img {
+		@include size(100%);
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&.active::before {
+		content: '';
+		@include size(25%);
+		@include position(absolute, false, 0, 0);
+		display: block;
+		border: 2px solid var(--white-color);
+		border-radius: 50%;
+		background: #4cb944;
+	}
+}

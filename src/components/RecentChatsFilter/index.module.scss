@@ -1,0 +1,26 @@
+.filter-list {
+	@include flex(row, center);
+	gap: 24px;
+	margin-top: 24px;
+
+	> li {
+		padding: 4px 8px;
+
+		&.selected {
+			background: #33bee7;
+			border-radius: 4px;
+
+			p {
+				color: var(--white-color);
+                    opacity: 1;
+			}
+		}
+
+		p {
+			font-size: 12px;
+			line-height: 18px;
+			color: #33bee7;
+			opacity: 0.5;
+		}
+	}
+}

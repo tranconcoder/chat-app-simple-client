@@ -1,0 +1,54 @@
+.chat-page-typing {
+	@include size(100%, 72px);
+	@include position(fixed, false, 0, 0);
+	@include flex(row, center);
+	padding: 8px 16px 28px;
+	border-top: 1px solid #ededed;
+	background-color: var(--white-color);
+	z-index: 2;
+
+	.form {
+		@include size(100%, false);
+		@include flex(row, center);
+
+		> button {
+			background-color: transparent;
+		}
+
+		.emoji,
+		.send-message-button {
+			@include size(24px);
+			color: #ccc;
+		}
+
+		.send-message-button {
+			cursor: pointer;
+			user-select: none;
+			-webkit-user-drag: none;
+
+			&.active {
+				color: #009dff;
+			}
+
+			&:active {
+				animation: toggleMessageButon 500ms ease-in-out forwards;
+			}
+
+			@keyframes toggleMessageButon {
+				50% {
+					transform: scale(1.5);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+
+		.message-input {
+			@include size(false, 18px);
+			flex: 1;
+			border: none;
+			margin-left: 16px;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.pinned-chat-item {
+	@include position(relative);
+	padding: 16px 16px 20px;
+	background: #f7f7f7;
+	border-radius: 8px;
+
+     &:active {
+          opacity: 0.7;
+     }
+
+	&::before {
+		content: '';
+		@include size(18px);
+		@include position(absolute, 8px, 8px);
+		background: var(--pin-icon);
+		display: block;
+	}
+
+	&:not(.seen) {
+		background: rgba(#33bee7, 0.1);
+		border-radius: 8px;
+
+		&::before {
+			@include size(12px);
+			background: #33bee7;
+			border-radius: 50%;
+		}
+
+		.content {
+			color: #33bee7;
+		}
+	}
+
+	.user-info {
+		@include flex(row, center);
+
+		img {
+			@include size(36px);
+			border-radius: 50%;
+			margin-right: 8px;
+		}
+
+		span {
+			@include webkitMaxLine(2);
+			font-size: 14px;
+			line-height: 17px;
+			color: #33bee7;
+		}
+	}
+
+	.content {
+		@include webkitMaxLine(1);
+		font-size: 12px;
+		line-height: 18px;
+		color: #020e12;
+		margin-top: 12px;
+	}
+}

@@ -1,0 +1,23 @@
+.slide-one {
+	@include size(100%);
+	@include flex(column, center);
+
+	.text-box {
+		opacity: 0;
+		animation: startPageShowTextBox 1s ease-in-out 500ms forwards;
+		color: var(--white-color);
+		text-align: center;
+		margin-top: 130px;
+
+		h2 {
+			font-weight: 500;
+			font-size: 45px;
+			line-height: 54px;
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 30px;
+		}
+	}
+}

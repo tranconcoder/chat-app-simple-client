@@ -1,0 +1,102 @@
+.logo-container {
+	@include size(100%, 300px);
+	@include position(relative);
+
+	&.first-animation {
+		.circle {
+			animation: showCircleFirst 1.5s ease-in-out forwards;
+		}
+
+		img {
+			animation: showThumbnailFirst 1.5s ease-in-out forwards;
+		}
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		padding-bottom: 100%;
+	}
+
+	.circle {
+		@include size(462px);
+		@include position(absolute, false, 50%, 0);
+		transform: translateX(50%);
+		border-radius: 50%;
+		background-color: var(--white-color);
+		transform-origin: center;
+		animation: showCircle 1.5s ease-in-out forwards;
+
+		@keyframes showCircle {
+			from {
+				transform: translateX(-150px) translateY(-300px);
+				opacity: 0;
+			}
+			to {
+				transform: translateX(50%) translateY(0px);
+				opacity: 1;
+			}
+		}
+
+		@keyframes showCircleFirst {
+			from {
+				transform: translateX(50%) scale(5);
+				opacity: 0;
+			}
+			to {
+				transform: translateX(50%) scale(1);
+				opacity: 1;
+			}
+		}
+	}
+
+	> img {
+		@include position(absolute, false, 50%, 24px);
+		@include size(224px, 205px);
+		animation: showThumbnail 1.5s ease-in-out forwards;
+
+		@keyframes showThumbnail {
+			from {
+				transform: translateX(-150px) translateY(-300px) scale(0);
+				opacity: 0;
+			}
+			to {
+				transform: var(--transform, translateX(50%) translateY(0px));
+				opacity: 1;
+			}
+		}
+
+		@keyframes showThumbnailFirst {
+			from {
+				transform: translateX(50%) translateY(-300px) scale(0);
+				opacity: 0;
+			}
+			to {
+				transform: var(--transform, translateX(50%) translateY(0px));
+				opacity: 1;
+			}
+		}
+	}
+
+	@keyframes showLogoContainerFirst {
+		from {
+			@include size(500%, false);
+			opacity: 0;
+		}
+		to {
+			@include size(110%, false);
+			opacity: 1;
+		}
+	}
+
+	@keyframes showLogoContainer {
+		from {
+			@include size(0%, false);
+			opacity: 0;
+		}
+		to {
+			@include size(110%, false);
+			opacity: 1;
+		}
+	}
+}

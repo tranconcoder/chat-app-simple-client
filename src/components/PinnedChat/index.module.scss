@@ -1,0 +1,11 @@
+.pinned-chats {
+	padding: 0px 16px 24px;
+
+	.pinned-chat-list {
+		@include size(100%);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 100px 100px;
+		gap: 8px;
+	}
+}

@@ -1,0 +1,41 @@
+.toast-message {
+	@include size(100%, false);
+	@include maxSize(false, 100vh);
+	@include position(fixed, 0, 0);
+	padding: 10px;
+	overflow: hidden;
+	z-index: 2;
+
+	&.hide {
+		z-index: -1;
+	}
+
+	.toast-message-wrapper {
+		@include maxSize(inherit);
+		padding: 10px 10px 100px;
+		overflow-y: auto;
+
+		.toast-message-list {
+		}
+
+		.remove-all-message-button {
+			@include size(100%, 50px);
+			@include flexCenter();
+			border-radius: 8px;
+			background-color: var(--white-color);
+			margin-top: 10px;
+			transition: all ease-in-out 200ms;
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+
+			&:active {
+				opacity: 0.8;
+			}
+
+			p {
+				font-weight: 500;
+				font-size: 16px;
+				opacity: 0.8;
+			}
+		}
+	}
+}

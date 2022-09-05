@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+button {
+	border: none;
+	user-select: none;
+}
+
+input {
+	outline: none;
+}
+
+img {
+	user-select: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+textarea {
+	outline: none;
+}
+
+#root {
+	overflow: hidden;
+}

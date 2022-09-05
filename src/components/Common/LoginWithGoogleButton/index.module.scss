@@ -1,0 +1,21 @@
+.login-with-google {
+	@include size(300px, 60px);
+	@include flex(row, center, center);
+	border-radius: 100rem;
+	background-color: var(--white-color);
+
+	&:focus {
+		filter: brightness(0.9);
+	}
+
+	svg {
+		@include size(30px);
+		margin-right: 20px;
+	}
+
+	span {
+		font-size: 16px;
+		font-weight: 500;
+		color: var(--text-color);
+	}
+}

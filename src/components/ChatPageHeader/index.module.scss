@@ -1,0 +1,44 @@
+.header {
+	@include size(100%, 72px);
+	@include position(fixed, 0, 0);
+	@include flex(row, center);
+	padding: 12px 8px;
+	border-bottom: 1px solid #ededed;
+	background-color: var(--white-color);
+	z-index: 2;
+
+	.info-container {
+		margin-left: 10px;
+		flex: 1;
+
+		.name {
+			@include webkitMaxLine(1);
+			color: #33bee7;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 20px;
+		}
+
+		.active-status {
+			@include webkitMaxLine(1);
+			color: #020e12;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+
+	.call-button,
+	.video-call-button,
+	.more-button {
+		@include size(24px);
+	}
+
+	.call-button {
+		margin-left: 38px;
+	}
+
+	.video-call-button,
+	.more-button {
+		margin-left: 10px;
+	}
+}

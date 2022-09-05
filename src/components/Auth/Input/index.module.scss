@@ -1,0 +1,63 @@
+.input-container {
+	@include size(100%, false);
+
+	> div {
+		@include size(100%);
+		@include position(relative);
+
+		input[type='text'],
+		input[type='password'],
+		input:not([type]) {
+			@include size(100%, 40px);
+			border: 2px solid transparent;
+			border-radius: 4px;
+			padding-inline: 10px;
+
+			&:focus {
+				border-color: #ccc;
+			}
+		}
+
+		.toggle-password {
+			svg {
+				@include position(absolute, 50%, 10px);
+				@include size(18px);
+				transform: translateY(-50%);
+				padding: 10px;
+				box-sizing: content-box;
+				color: #555;
+			}
+		}
+	}
+
+	.error-message {
+		@include size(100%, false);
+		@include flex(row, center);
+		color: rgb(255, 38, 0);
+		font-size: 14px;
+		margin-top: 8px;
+		overflow: hidden;
+		animation: showErrorMessage 300ms ease-in-out forwards;
+
+		svg {
+			@include size(18px);
+			flex-shrink: 0;
+			margin-right: 10px;
+		}
+
+		span {
+			@include webkitMaxLine(2);
+		}
+
+		@keyframes showErrorMessage {
+			from {
+				opacity: 0;
+				max-height: 0;
+			}
+			to {
+				opacity: 1;
+				max-height: 30px;
+			}
+		}
+	}
+}
