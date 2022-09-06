@@ -20,7 +20,9 @@ function App() {
 						path="/chat-app-simple-client"
 						element={<p>Home Page 1</p>}
 					/>
+
 					<Route path="/" element={<p>Home Page</p>} />
+
 					<Route path="/chat">
 						{Object.entries(startRouteConfig).map(
 							([key, value], index) => {
