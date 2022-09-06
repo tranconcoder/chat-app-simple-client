@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/chat-app-simple-client/start/1/static/css/main.e9309fd6.css",
-    "main.js": "/chat-app-simple-client/start/1/static/js/main.e2cf7d66.js",
-    "static/js/787.1b16fea2.chunk.js": "/chat-app-simple-client/start/1/static/js/787.1b16fea2.chunk.js",
-    "static/media/start-page-slide-two-thumb.svg": "/chat-app-simple-client/start/1/static/media/start-page-slide-two-thumb.eee3ddb517a278eb8f426605abd8673a.svg",
-    "static/media/start-page-slide-three-thumb.svg": "/chat-app-simple-client/start/1/static/media/start-page-slide-three-thumb.51eb727ce3a5a7ab1c94ab9b88dedb42.svg",
-    "static/media/call-icon.svg": "/chat-app-simple-client/start/1/static/media/call-icon.c7b01162ab6cd3ea07ebd1620a31c142.svg",
-    "static/media/pin-icon.svg": "/chat-app-simple-client/start/1/static/media/pin-icon.94298a788bc8fcc6e9623e677b9b49ce.svg",
-    "index.html": "/chat-app-simple-client/start/1/index.html",
-    "static/media/success-icon.svg": "/chat-app-simple-client/start/1/static/media/success-icon.79805c987fcb1de96ec01171ec287b91.svg",
-    "static/media/alert-icon.svg": "/chat-app-simple-client/start/1/static/media/alert-icon.1746a1db48ed79f7c8944c741c4ac383.svg",
-    "static/media/error-icon.svg": "/chat-app-simple-client/start/1/static/media/error-icon.f19f0e990b96b4384bfb054d4673ff9f.svg",
-    "static/media/message-icon.svg": "/chat-app-simple-client/start/1/static/media/message-icon.02e66b61ba8e626872cc0c3c966d0729.svg",
-    "static/media/search-icon.svg": "/chat-app-simple-client/start/1/static/media/search-icon.11b35e3a778108983d1e397db6f83593.svg",
-    "static/media/back-icon.svg": "/chat-app-simple-client/start/1/static/media/back-icon.b3edfcffe8eeaa484fbac670abd53c1d.svg",
-    "static/media/video-call-icon.svg": "/chat-app-simple-client/start/1/static/media/video-call-icon.a07b95e52f1ec8cd56868e1562f834b6.svg",
-    "main.e9309fd6.css.map": "/chat-app-simple-client/start/1/static/css/main.e9309fd6.css.map",
-    "main.e2cf7d66.js.map": "/chat-app-simple-client/start/1/static/js/main.e2cf7d66.js.map",
-    "787.1b16fea2.chunk.js.map": "/chat-app-simple-client/start/1/static/js/787.1b16fea2.chunk.js.map"
+    "main.css": "/chat-app-simple-client/static/css/main.e9309fd6.css",
+    "main.js": "/chat-app-simple-client/static/js/main.9023774e.js",
+    "static/js/787.1b16fea2.chunk.js": "/chat-app-simple-client/static/js/787.1b16fea2.chunk.js",
+    "static/media/start-page-slide-two-thumb.svg": "/chat-app-simple-client/static/media/start-page-slide-two-thumb.eee3ddb517a278eb8f426605abd8673a.svg",
+    "static/media/start-page-slide-three-thumb.svg": "/chat-app-simple-client/static/media/start-page-slide-three-thumb.51eb727ce3a5a7ab1c94ab9b88dedb42.svg",
+    "static/media/call-icon.svg": "/chat-app-simple-client/static/media/call-icon.c7b01162ab6cd3ea07ebd1620a31c142.svg",
+    "static/media/pin-icon.svg": "/chat-app-simple-client/static/media/pin-icon.94298a788bc8fcc6e9623e677b9b49ce.svg",
+    "static/media/success-icon.svg": "/chat-app-simple-client/static/media/success-icon.79805c987fcb1de96ec01171ec287b91.svg",
+    "index.html": "/chat-app-simple-client/index.html",
+    "static/media/alert-icon.svg": "/chat-app-simple-client/static/media/alert-icon.1746a1db48ed79f7c8944c741c4ac383.svg",
+    "static/media/error-icon.svg": "/chat-app-simple-client/static/media/error-icon.f19f0e990b96b4384bfb054d4673ff9f.svg",
+    "static/media/message-icon.svg": "/chat-app-simple-client/static/media/message-icon.02e66b61ba8e626872cc0c3c966d0729.svg",
+    "static/media/search-icon.svg": "/chat-app-simple-client/static/media/search-icon.11b35e3a778108983d1e397db6f83593.svg",
+    "static/media/back-icon.svg": "/chat-app-simple-client/static/media/back-icon.b3edfcffe8eeaa484fbac670abd53c1d.svg",
+    "static/media/video-call-icon.svg": "/chat-app-simple-client/static/media/video-call-icon.a07b95e52f1ec8cd56868e1562f834b6.svg",
+    "main.e9309fd6.css.map": "/chat-app-simple-client/static/css/main.e9309fd6.css.map",
+    "main.9023774e.js.map": "/chat-app-simple-client/static/js/main.9023774e.js.map",
+    "787.1b16fea2.chunk.js.map": "/chat-app-simple-client/static/js/787.1b16fea2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9309fd6.css",
-    "static/js/main.e2cf7d66.js"
+    "static/js/main.9023774e.js"
   ]
 }
