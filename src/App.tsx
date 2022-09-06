@@ -12,17 +12,10 @@ import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register';
 
 function App() {
-	console.log(1);
-
 	return (
 		<Fragment>
 			<BrowserRouter>
-				<Routes>
-					<Route
-						path="/chat-app-simple-client"
-						element={<p>Home Page 1</p>}
-					/>
-
+				<Routes location="chat-app-simple-client">
 					<Route path="/" element={<p>Home Page</p>} />
 
 					<Route path="/chat">
