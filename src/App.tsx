@@ -10,20 +10,15 @@ import ChatPage from './pages/Chat';
 import ChatMenuPage from './pages/ChatMenu';
 import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register';
-import socket from './services/socket/index.socket';
 
 function App() {
-	useEffect(() => {
-		// socket.connect();
-	}, []);
-
 	return (
 		<Fragment>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/">
-						<Route path="/" element={<SlideOne />} />
+					<Route path="/" element={<p>Home Page</p>} />
 
+					<Route path="/chat">
 						{Object.entries(startRouteConfig).map(
 							([key, value], index) => {
 								return (
@@ -35,6 +30,8 @@ function App() {
 								);
 							}
 						)}
+
+						<Route element={<SlideOne />} />
 					</Route>
 
 					<Route path="/auth">
