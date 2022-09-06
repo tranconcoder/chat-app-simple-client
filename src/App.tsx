@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NeedAuth from './components/Common/NeedAuth';
 import HandleLogin from './components/HandleLogin';
 import MessageStore from './components/MessageStore';
+import StartPageLayout from './components/StartPage/Layout/Layout';
 import SlideOne from './components/StartPage/SlideOne';
 import ToastMessage from './components/ToastMessage';
 import startRouteConfig from './config/startRoute.config';
@@ -19,6 +20,13 @@ function App() {
 			<BrowserRouter basename="chat-app-simple-client">
 				<Routes>
 					<Route path="/">
+						<Route
+							path=""
+							element={
+								<StartPageLayout bodyElement={<SlideOne />} />
+							}
+						/>
+
 						{Object.entries(startRouteConfig).map(
 							([key, value], index) => {
 								return (
@@ -30,8 +38,6 @@ function App() {
 								);
 							}
 						)}
-
-						<Route element={<SlideOne />} />
 					</Route>
 
 					<Route path="/auth">

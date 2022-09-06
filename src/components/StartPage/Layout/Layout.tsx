@@ -18,7 +18,7 @@ function StartPageLayout({ bodyElement }: StartPageLayoutProps) {
 	const navigate = useNavigate();
 
 	const location = useLocation();
-	const currentStep = Number(location.pathname.split('/').at(-1));
+	const currentStep = Number(location.pathname.split('/').at(-1)) || 1;
 
 	const [isHiding, setIsHiding] = useState(false);
 
