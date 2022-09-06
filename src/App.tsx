@@ -16,8 +16,11 @@ function App() {
 		<Fragment>
 			<BrowserRouter>
 				<Routes>
+					<Route
+						path="/chat-app-simple-client"
+						element={<p>Home Page 1</p>}
+					/>
 					<Route path="/" element={<p>Home Page</p>} />
-
 					<Route path="/chat">
 						{Object.entries(startRouteConfig).map(
 							([key, value], index) => {
@@ -33,7 +36,6 @@ function App() {
 
 						<Route element={<SlideOne />} />
 					</Route>
-
 					<Route path="/auth">
 						<Route
 							path="login"
@@ -52,7 +54,6 @@ function App() {
 							}
 						/>
 					</Route>
-
 					<Route
 						path="/chat"
 						element={
@@ -61,7 +62,6 @@ function App() {
 							</NeedAuth>
 						}
 					/>
-
 					<Route
 						path="/chat/:id"
 						element={
