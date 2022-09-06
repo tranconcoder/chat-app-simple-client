@@ -12,6 +12,8 @@ import LoginPage from './pages/Login';
 import RegisterPage from './pages/Register';
 
 function App() {
+	console.log(1);
+
 	return (
 		<Fragment>
 			<BrowserRouter>
