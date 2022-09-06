@@ -14,11 +14,9 @@ import RegisterPage from './pages/Register';
 function App() {
 	return (
 		<Fragment>
-			<BrowserRouter>
-				<Routes location="chat-app-simple-client">
-					<Route path="/" element={<p>Home Page</p>} />
-
-					<Route path="/chat">
+			<BrowserRouter basename="chat-app-simple-client">
+				<Routes>
+					<Route path="/">
 						{Object.entries(startRouteConfig).map(
 							([key, value], index) => {
 								return (
@@ -33,6 +31,7 @@ function App() {
 
 						<Route element={<SlideOne />} />
 					</Route>
+
 					<Route path="/auth">
 						<Route
 							path="login"
