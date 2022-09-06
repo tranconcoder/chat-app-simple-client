@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/chat-app-simple-client/static/css/main.e9309fd6.css",
-    "main.js": "/chat-app-simple-client/static/js/main.9023774e.js",
+    "main.css": "/chat-app-simple-client/static/css/main.ea34e384.css",
+    "main.js": "/chat-app-simple-client/static/js/main.82606081.js",
     "static/js/787.1b16fea2.chunk.js": "/chat-app-simple-client/static/js/787.1b16fea2.chunk.js",
     "static/media/start-page-slide-two-thumb.svg": "/chat-app-simple-client/static/media/start-page-slide-two-thumb.eee3ddb517a278eb8f426605abd8673a.svg",
     "static/media/start-page-slide-three-thumb.svg": "/chat-app-simple-client/static/media/start-page-slide-three-thumb.51eb727ce3a5a7ab1c94ab9b88dedb42.svg",
@@ -15,12 +15,12 @@
     "static/media/search-icon.svg": "/chat-app-simple-client/static/media/search-icon.11b35e3a778108983d1e397db6f83593.svg",
     "static/media/back-icon.svg": "/chat-app-simple-client/static/media/back-icon.b3edfcffe8eeaa484fbac670abd53c1d.svg",
     "static/media/video-call-icon.svg": "/chat-app-simple-client/static/media/video-call-icon.a07b95e52f1ec8cd56868e1562f834b6.svg",
-    "main.e9309fd6.css.map": "/chat-app-simple-client/static/css/main.e9309fd6.css.map",
-    "main.9023774e.js.map": "/chat-app-simple-client/static/js/main.9023774e.js.map",
+    "main.ea34e384.css.map": "/chat-app-simple-client/static/css/main.ea34e384.css.map",
+    "main.82606081.js.map": "/chat-app-simple-client/static/js/main.82606081.js.map",
     "787.1b16fea2.chunk.js.map": "/chat-app-simple-client/static/js/787.1b16fea2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9309fd6.css",
-    "static/js/main.9023774e.js"
+    "static/css/main.ea34e384.css",
+    "static/js/main.82606081.js"
   ]
 }
