@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NeedAuth from './components/Common/NeedAuth';
 import HandleLogin from './components/HandleLogin';
 import MessageStore from './components/MessageStore';
+import SlideOne from './components/StartPage/SlideOne';
 import ToastMessage from './components/ToastMessage';
 import startRouteConfig from './config/startRoute.config';
 import ChatPage from './pages/Chat';
@@ -20,7 +21,9 @@ function App() {
 		<Fragment>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/start">
+					<Route path="/">
+						<Route path="/" element={<SlideOne />} />
+
 						{Object.entries(startRouteConfig).map(
 							([key, value], index) => {
 								return (
