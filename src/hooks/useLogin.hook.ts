@@ -15,7 +15,6 @@ export function useLogin() {
 	const triggerLogin = () => {
 		const loginUrl = `${hostName}/auth/google`;
 		const loginWindow = window.open(loginUrl);
-		console.log(loginUrl);
 
 		loginWindowRef.current = loginWindow;
 

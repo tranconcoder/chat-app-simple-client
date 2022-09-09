@@ -15,6 +15,8 @@ import { setAuth } from '../../redux/slices/auth.slice';
 import instance from '../../services/axios/index.axios';
 import { AuthStore } from '../../types/store';
 import styles from './index.module.scss';
+import { addMessage } from '../../redux/slices/toastMessage.slice';
+import { v4 as uuidv4 } from 'uuid';
 
 const cx = classNames.bind(styles);
 
@@ -35,18 +37,32 @@ function LoginPage() {
 		if (googleId || userId) navigate('/chat');
 	}, [googleId, userId]); // eslint-disable-line
 
-	const handleSubmit = async (
+	const handleSubmit = (
 		values: typeof authFormValues,
 		helper: FormikHelpers<typeof authFormValues>
 	) => {
-		const { data } = await instance.post('/auth/login', values);
+		instance
+			.post('/auth/login', values)
+			.then((res) => {
+				const data = res.data;
 
-		if (data.refreshToken) {
-			const userProfile: AuthStore = jwtDecode(data.refreshToken);
+				if (data.refreshToken) {
+					const userProfile: AuthStore = jwtDecode(data.refreshToken);
 
-			updateToken(data.refreshToken);
-			dispatch(setAuth(userProfile));
-		}
+					updateToken(data.refreshToken);
+					dispatch(setAuth(userProfile));
+				}
+			})
+			.catch((err) => {
+				dispatch(
+					addMessage({
+						id: uuidv4(),
+						title: 'Đăng nhập thất bại, vui lòng kiểm tra tên đăng nhập hoặc mật khẩu!',
+						type: 'danger',
+						state: 'showing',
+					})
+				);
+			});
 	};
 
 	return (
